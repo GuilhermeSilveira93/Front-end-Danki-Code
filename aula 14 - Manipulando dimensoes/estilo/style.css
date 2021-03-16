@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+article{
+    margin: 0 auto;
+    overflow: auto;/* Faz com que o texto não saia de dento do artigo, por maior que seja, isso irá criar uma scrowbar.*/
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+}
+h1{
+    font-size: 2em;
+}
+.artigo2{
+    margin: 15px auto;
+    overflow: auto;/* Faz com que o texto não saia de dento do artigo, por maior que seja, isso irá criar uma scrowbar.*/
+    width: 100%;
+    max-height: 300px;
+    max-width: 900px;
+    background-color: rgb(74, 121, 248);
+}
+
