@@ -2,3 +2,44 @@
     margin: 0;
     padding: 0;
 }
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.center{ /*PADDING COM BORDER-BOX, FAZ COM QUE O ESPAÇAMENTO SEJA INTERNO*/
+    box-sizing: border-box;
+    width: 1280px;
+    max-width: 80%;
+    background-color: gray;
+    margin: 25px auto;
+    padding: 30px;
+}
+.center2{ /*PADDING SEM BORDER-BOX, FAZ COM QUE O ESPAÇAMENTO SEJA EXTERNO, ASSIM ELE FICA MAIOR DO QUE OS 500PX ABAIXO DEFINIDO.*/
+    width: 1280px;
+    max-width: 80%;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: gray;
+}
+h1{
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+article{
+    width: 1280px;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.center3{
+    width: 1280px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: gray;
+}
+.artigo2{
+    margin-right: 30px;
+    margin-left: 30px;
+}
