@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.inherit{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+.inherit2{
+    width: 150px ;
+    background-color: red;
+}
+.inherit > .inherit2 > span{
+    display: inline-block;
+    width: inherit; /*inherit ( herdar ), pega as propriedades que foram setadas no PAI, ou seja, no BOX.*/
+    height: inherit;
+}
