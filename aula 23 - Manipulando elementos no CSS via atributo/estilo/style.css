@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+}
+
+a[href="http://www.google.com"]{
+    background-color: yellow;
+}
+a[href="http://www.facebook.com"]{
+    background-color: green;
+}
+[href="http://www.facebook.com"]{
+    background-color: red; /*NADA IRÁ ACONTECER, POIS ELE É MENOS ESPECIFICADO QUE A FORMA DE CIMA*/
+}
+a[href*="google"]{
+    background-color: aqua;/*PRECISA TER ASTERISTICO * */ 
+}
+a[attr~="YouTube"]{
+    background-color: black;
+    color: white;
+}
+a[attr*="mundo"]{
+    background-color: rgb(255, 0, 0);
+    color: rgb(229, 255, 0);
+}
+
+
