@@ -26,5 +26,9 @@ a[attr*="mundo"]{
     background-color: rgb(255, 0, 0);
     color: rgb(229, 255, 0);
 }
+h1[attr*="Principal"]{
+    background-color: red;
+}
+
 
 
