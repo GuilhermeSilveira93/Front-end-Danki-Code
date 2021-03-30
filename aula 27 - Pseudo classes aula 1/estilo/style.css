@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+.teste,.teste1,.teste2{
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.teste1{
+    background-color: rgb(117, 0, 0);
+}
+.teste2{
+    background-color: blue;
+}
+
+/*TRABALHANDO COM PSEUDO CLASSES É DEPOIS DOS 2 PONTO : */
+.teste:hover{ /*é quando o mouse é passado por cima*/
+    background-color: blue;
+    position: relative;
+    left: 30px;
+}
+.teste1:active{ /*é quando o mouse é clicado */
+    background-color: black;
+}
+.input:focus{ /* FOCUS SÓ SERVE PARA FORMULARIOS OU CAIAS DE TEXTO, SÓ SERVE QUANDO CLICAMOS (FOCAMOS) NO NOSSO ELEMENTO*/
+    background-color: rgb(110, 110, 110);
+    border: none;
+}
+.textarea1{
+    display: block;
+    width: 600px;
+    height: 300px;
+}
+
+.link1,.link2{
+    color: blue;
+}
+.link1:visited{ /*O CHROME E O EDGE TEM CONFLITO, ELES NÃO RECONHECEM ESSE COMANDO */
+    color: violet;
+}
+.link2:link{/*O CHROME E O EDGE TEM CONFLITO, ELES NÃO RECONHECEM ESSE COMANDO */
+    color: rgb(94, 68, 97);
+}
+
+
+
+                        /* FOCUS E HOVER SERÃO OS MAIS USADOS*/
