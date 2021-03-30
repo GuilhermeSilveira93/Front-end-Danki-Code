@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+}
+.parent{
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    background-color: gray;
+}
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 20px auto;
+}
+.parent div:nth-of-type(2){
+    background-color: red;
+}
+/*--------------------------------------------------------------*/
+/*outra forma de aplicar*/
+.parent2{
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    background-color: gray;
+}
+
+.item2{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 20px 0;
+    display: inline-block;
+}
+.parent2 div:nth-of-type(2) div.item2{
+    background-color: red;
+}
+/*----------------------------------------------------------------*/
+/* APLICANDO FÓRMULA*/
+.parent3{
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    background-color: gray;
+}
+
+.item3{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 20px 0;
+    display: inline-block;
+}
+.parent3 div:nth-of-type(2n + 1) div.item3{ /*AQUI QUER DIZER: COMECE DO PRIMEIRO, ACADA 2 APLIQUE O COMANDO ABAIXO: */
+    background-color: rgb(255, 115, 0);
+}
+/*---------------------------------------------------------------------*/
+.parent4{
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+    background-color: gray;
+}
+
+.item4{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 20px 0;
+    display: inline-block;
+}
+.parent4 div:first-child div.item4{ /*NÃO ESTÁ FUNCIONANDO POIS ELE TEM QUE ESTAR OBRIGATORIAMENTE NA PRIMEIRA POSIÇÃO*/
+    background-color: red;
+}
+.parent4 p:first-of-type{
+    color: orange;
+}
+.parent4 div:nth-of-type(2) div.item4{ /*AGORA ELE FUNCIONA, POIS NÃO QUIS O PRIMEIRO ELEMENTO, QUIS EXATAMENTO O PRIMEIRO ITEM DO TIPO DIV.*/
+    background-color: red;
+}
