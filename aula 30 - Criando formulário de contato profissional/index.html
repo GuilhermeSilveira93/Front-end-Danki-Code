@@ -23,9 +23,19 @@
         <form action="">
             <fieldset><!--QUER DIZER QUE QUERO CRIAR UM GRUPO,nesse caso é a linha que contorna o formulario-->
                 <legend>Meu Formulário</legend><!--Legend é a legenda que fica no meio da linha.-->
-                <input type="text" placeholder="Nome"><!--PLACEHOLDER É O NOME CLARINHO QUE FICA DENTRO DO CAMPO A SER PREENCHIDO-->
-                <input type="text" placeholder="Sobrenome">
-                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Nome" required><!--PLACEHOLDER É O NOME CLARINHO QUE FICA DENTRO DO CAMPO A SER PREENCHIDO-->
+                <input type="text" placeholder="Sobrenome" required>
+                <input type="email" placeholder="E-mail" required>
+                <div class="lista1">
+                    <select name="Lista" id="" required>
+                        <option value="" disabled selected>Qual sua idade ?</option><!--COLOCANDO DISABLED, FAZ COM QUE ELA NÃO SEJA UM OPÇÃO VALIDA, MAS COM O SELECTED, FAZ COM QUE ELA APAREÇA, COMO SE FOSSE UM PLACEHOLDER-->
+                        <option value="">18 à 25</option>
+                        <option value="">26 à 35</option>
+                        <option value="">36 à 45</option>
+                        <option value="">46+</option>
+                    </select>
+                    <input type="submit" name="Enviar" id="">
+                </div>
             </fieldset>
         </form>
     </aside>

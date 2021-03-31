@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body,html{
     width: 100%;
@@ -71,23 +72,36 @@ form{
     text-align: center;
 }
 form legend{
+    text-shadow: 0px 0px 10px white;
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-align: left;
+    padding: 0px 15px;
 }
 form fieldset{
-    padding: 0 40px;
+    padding: 20px;
     border: 2px dashed black;
 }
 input{
+    padding: 10px 13px;
     display: inline-block;
-    float: left;
     width: 50%;
     margin-right: -4px;
 }
-input:last-child{
+input[type="email"]{
     width: 100%;
 }
 form input[type="text"]{
     margin-top: 30px;
+    max-width: 80%;
+}
+.lista1{
+    text-align: left;
+}
+form div select, form div input{
+    vertical-align: top;
+    width: 50%;
+    margin-top: 30px;
+    padding: 10px 13px;
+    display: inline-block;
 }
