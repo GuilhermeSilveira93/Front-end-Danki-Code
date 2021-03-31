@@ -18,10 +18,15 @@ aside,main{
     margin-right: -4px;
 }
 aside{
+    padding: 0px 25px;
+    height: 100%;
+    max-height: 600px;
     width: 66.6%;
     margin: 0 auto;
+    overflow: auto;
 }
 main{
+    vertical-align: top;
     background-color: #ffffffd7;
     height: 100%;
     width: 33.3%;
@@ -81,7 +86,9 @@ form legend{
 form fieldset{
     padding: 20px;
     border: 2px dashed black;
-}
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.582);
+    box-shadow: 10px 10px 10px #000000;}
 input{
     padding: 10px 13px;
     display: inline-block;
