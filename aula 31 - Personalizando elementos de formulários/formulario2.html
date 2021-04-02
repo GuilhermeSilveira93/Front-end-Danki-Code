@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style2.css">
+    <title>Personalizando elementos de formulários</title>
+</head>
+<body>
+    <h1>Esse é o meu Formulario</h1>
+    <h2>E quem manda aqui sou eu !</h2>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+
+            <!--CRINDO UM INPUT DE ENVIAR ARQUIVO-->
+            <!--<p>Esse input, não é personalizavel no CSS, nesse caso, vamos transformar o LABE no proprio input.</p>
+            <p>Então vamos no CSS e desabilitamos o input type file</p>-->
+            <input type="file" id="file" name="file">
+            <label for="file" id="labelfile">Enviar Curriculo</label> <!--A LABEL É COMO SE FOSSE UM INPUT, MAS É EDITAVEL NO CSS, O FOR LINKA ELE COM O INPUT DESEJADO ATRAVEZ O ID, COMO UMA ANCORA FAZ COM UM SITE-->
+
+
+            <div>
+                <input type="checkbox" name="checkbox" id="check1">
+                <label for="check1"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="check2">
+                <label for="check2"></label>
+            </div>
+
+
+            <select name="" id="">
+                <option value="">item 1</option>
+                <option value="">item 2</option>
+            </select>
+
+            <a href="index.html">Formulario 1</a>
+        </fieldset>
+    </form>
+</body>
+</html>

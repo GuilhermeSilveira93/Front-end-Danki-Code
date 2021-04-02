@@ -1,18 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
-    <title>Document</title>
+    <title>Personalizando elementos de formulários</title>
 </head>
 <body>
+    <h1>Esse é o meu Formulario</h1>
+    <h2>E quem manda aqui sou eu !</h2>
     <form action="">
         <fieldset>
-            <legend>Formulario Teste</legend>
-            <div><input type="text" placeholder="Nome"></div>
-            <div><input type="text" placeholder="Sobrenome"></div>
-            <div><input type="email" name="" id="" placeholder="E-mail"></div>
+            <legend>Contato</legend>
+            <h3>Preenchimento Necessario</h3>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="email" name="" id="" placeholder="E-mail">
+            <h3>Selecione sua Cidade</h3>
+            <select name="" id="">
+                <option value="Campinas" disabled selected>Cidade</option>
+                <option value="Campinas">Campinas</option>
+                <option value="Campinas">São Paulo</option>
+                <option value="Campinas">Rio de Janeiro</option>
+                <option value="Campinas">Jaguariuna</option>
+            </select>
+            <hr>
+            <h3>Do que gosta de comer ?</h3>
+            <div>
+                <input type="checkbox" value="Macarrao[]"><span>Macarrão</span>
+            </div>
+            <div>
+                <input type="checkbox" value="Lasanha[]"><span>Lasanha</span>
+            </div>
+            <div>
+                <input type="checkbox" value="Peixe[]"><span>Peixe</span>
+            </div>
+            <div>
+                <input type="checkbox" value="Panquecas[]"><span>Panquecas</span>
+            </div>
+            <div>
+                <input type="checkbox" value="Carne[]"><span>Carne</span>
+            </div>
+            <hr>
+            <h3>Quantos anos você tem ?</h3>
+            <div>
+                <input type="radio" name="idade" value=""><span>Menor de 18 anos</span>
+            </div>
+            <div>
+                <input type="radio" name="idade" value=""><span>Entre 18 e 25</span>
+            </div>
+            <div>
+                <input type="radio" name="idade" value=""><span>Maior de 26</span>
+            </div> <!--O NAME TEM QUE SER IGUAL !!!-->
+            <hr>
+            <fieldset>
+                <legend id="legendtextarea">
+                    Escreva sua Menssagem para o Guilherme
+                </legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <hr>
+
+
+            <!--CRINDO UM INPUT DE ENVIAR ARQUIVO-->
+            <p>Esse input, não é personalizavel no CSS, nesse caso, vamos transformar o LABE no proprio input.</p>
+            <p>Então vamos no CSS e desabilitamos o input type file</p>
+            <input type="file" id="file" name="file">
+            <label for="file">Enviar Curriculo</label> <!--A LABEL É COMO SE FOSSE UM INPUT, MAS É EDITAVEL NO CSS, O FOR LINKA ELE COM O INPUT DESEJADO ATRAVEZ O ID, COMO UMA ANCORA FAZ COM UM SITE-->
+            <a href="formulario2.html">Formulario 2</a>
         </fieldset>
     </form>
 </body>
