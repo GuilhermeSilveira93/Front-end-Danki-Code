@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%;
+}
+
+/*ESSE COMANDO É PARA PEGAR UMA FONTE QUE ESTÁ EM UMA PASTA LOCAL BAIXADA*/
+@font-face{
+    src: url(../fonts/Pacifico-Regular.ttf);
+    font-family: "Minha Fonte";
+}
+/*E PARA NOMEAR ELA*/
+.fontebaixada{ /* aqui normal, só pra chamar a fonte*/
+    font-family: "Minha Fonte";
+}
+
+
+/*FONTE EXTERNA*/
+.fonteimportada{
+    font-family: 'Lobster', cursive;
+}
+.fonteimportada p{
+    font-family: 'Anton', sans-serif;
+}
+/*FONTE EXTERNA*/
+
+
+.box p{
+    font-family: "Minha Fonte";
+}
+.text{
+    font-family: 'Courier New', Courier, monospace !important; /* ESSE COMANDO FAZ COM QUE MESMO QUE O ELEMENTO NÃO TENHA MAIOR ESPECIFICAÇÃO, ELE SEJA SELECIONADO.*/
+}
+
+form *{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
