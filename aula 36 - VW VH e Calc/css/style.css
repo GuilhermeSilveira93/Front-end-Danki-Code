@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    margin: 15px 0;
+}
+.sidebar{
+    width: 300px;
+    height: 30%;
+    background-color: gray;
+    float: left;
+}
+.content{
+    width: calc(100% - 300px); /*ENVEZ DE FICAR DEFININDO MAX WIDGHT EM TUDO, DEIXAMOS A SIDE BAR FIXA (SEMPRE 300PX) E DEIXAMOS O CONTENT RESPONSIVO, COMO ? TIRANDO SEMPRE O TAMANHO FIXO, DA PROPORÇÃO 100% DELA, DO JEITO QUE TÁ NO COMANDO WIDTH*/
+    height: 30%;
+    background-color: black;
+    float: left;
+    color: white;
+}
+/*--------------------------------------------------------------------------*/
+.box{
+    width: calc((100% / 3) + 50px);/*POSSO USAR DESSA FORMA, OU SIMPLESMENTE FAZER A CONTA E DEFINIR A PORCENTAGEM, QUE É 33.333%*/
+    height: 90px;
+    background-color: green;
+}
+/*---------------------------------------------------------------------------*/
+.box2{
+    width: 50%; /* VIEWPORT WIDTH = LARGURA DO VIEWPORT()*/
+    height: 500px;
+    background-color: aqua;
+}
+.box3{
+    width: 100vw;
+    height: 30px; /* VIEWPORT HEIGHT = LARGURA DO VIEWPORT()*/
+    background-color: red;
+}
