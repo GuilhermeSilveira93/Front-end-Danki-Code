@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans";
+}
+body,html{
+}
+.parent{
+    width: 50%;
+    background-color: orange;
+    height: 400px;
+}
+.box{
+    margin-top: 50%;
+    display: inline-block;
+    width: 50%;
+    background-color: gray;
+} 
