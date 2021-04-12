@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 33.3%;
+    height: 150px;
+    background-color: gray;
+    display: inline-block;
+    margin-right: -4px;
+    border: 1px solid black;
+}
+
+/* ISSO É UM MEDIA QUERY, SERVE PARA DESIGN RESPONSIVO, QUANDO ELE ATIGIR 600PX, TODAS AS CONFIGURAÇÕES ABAIXO DELA SERÃO APLICADAS*/
+@media screen and (max-width:  600px){
+.box{
+    width: 100%;
+}
+}
+/*ASSIM COMO EU POSSO STER O MAXWIDHT, EU POSSO SETAR O MIN-WIDTH, QUE É O MESMO TIPO, MAS PARA LARGURA MINIMA*/    
