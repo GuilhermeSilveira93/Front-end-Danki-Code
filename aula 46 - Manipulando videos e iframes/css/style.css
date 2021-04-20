@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 70%;
+    min-width: 500px;
+    background-color: gray;
+
+}
+.video{
+    position: relative;
+    width: 50%;
+    padding-top: 30%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-align: center;
+}
+video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+section{
+    display: inline-block;
+    margin-right: -4px ;
+}
+video:hover{
+}
+/*
+iframe{
+    top: 0;
+    position: absolute;
+    width:50%;
+    height:400px;
+}
+*/
