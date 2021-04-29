@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+.box, .box2, .box3, .box4{
+    margin: 0 auto;
+    color: green;
+    width: 100%;
+    padding: 30px 2%;
+    background-color: rgb(61, 61, 61);
+    position: relative;
+}
+.box p{
+    font-size: 18px;
+    display: inline;
+}
+.box2 p{
+    font-size: 18px;
+    word-wrap: break-word;/*QUEBRA A LINHA DIREITO*/
+}
+.box3 p{
+    font-size: 18px;
+    word-break: break-all; /*não muda muito do word-wrap*/
+}
+.box4 p{
+    width: 500px;
+    background-color: gray;
+    font-size: 18px;
+    /*word-spacing: 20px;*espaçamento das palavras*/
+    white-space: pre;/*faz o texto ficar exatamente conforme formatado n <p>*/
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+    color: green;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    border-collapse: collapse;
+}
+.table-row{
+    display: table-row;/*é util para criar tabelas personalizadas*/
+}
+.table-cel{
+    display: table-cell;/*é util para criar tabelas personalizadas*/
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    height: 200px;
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+main{
+    display: flex;
+    align-items: center; /*FAZ COM QUE OS ELEMENTOS EM SI "AS BOX" FIQUEM ALINHADOS*/
+    flex-direction: column; /*COMO COLUNAS, PARECIDO COM DISPLAYBLOCK*/
+    /*flex-direction: row-reverse;
+      flex-direction: column-reverse; TROCA A ORDEM DAS TABELAS AUTOMATICAMENTE*/
+}
+aside{
+    order: 2; /*TROCA A ORDEM DAS TABELAS MANUALMENTE, IGUAL O Z-INDEX*/
+    background-color: gray;
+    padding: 30px;
+}
+article{
+    order: 1;/*TROCA A ORDEM DAS TABELAS MANUALMENTE, IGUAL O Z-INDEX*/
+    padding: 30px;
+    /*height: 900px; O ASIDE VAI ACOMPANHAR POR CAUSA DO DISPLAY FLEX*/
+    background-color: #ccc;
+}
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    background-color: rgb(105, 105, 105);
+}
+.box1{
+    margin: 0 auto;
+    order: 2;
+    width: 600px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.box2{
+    margin: 0 auto;
+    order: 1;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(200, 255, 0);
+}
