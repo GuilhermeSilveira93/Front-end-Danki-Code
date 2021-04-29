@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+main{
+    text-align: center;
+    width: 100%;
+    height: 766px;
+    background-color: rgb(94, 94, 94);
+    position: relative;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+.box1{
+    left: 25%;
+    top: 5%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(45deg, black,white,black,white,black);
+    border-radius: 50%;
+}
+.box1 p{
+    opacity: 1;
+    background-color: rgba(255, 255, 0);
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px 1px rgb(51, 51, 51);
+    border-radius: 50%;/* BORDER RADIUS COM PORCENTAGEM*/
+}
+.box2{
+    left: 25%;
+    top: 350px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    box-shadow: 5px 5px 5px 1px rgb(51, 51, 51);
+    border-radius: 15px; /* BORDER RADIUS COM PIXELS*/
+}
+.box3{
+    left: 60%;
+    top: 350px;
+    position: absolute;
+    
+    width: 30%;
+    padding-top: 30%;
+    background-color: rgb(4, 0, 255);
+    box-shadow: 5px 5px 5px 1px rgb(51, 51, 51);
+    border-radius: 50%; /* BORDER RADIUS RESPONSIVO*/
+}
+box3:hover{
+
+}
+.box4{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); /*É UMA PROPRIEDADE DO CSS3*/
+    position: absolute;
+    width: 40%;
+    max-width: 300px;
+    height: 40%;
+    max-height: 300px;
+    background-color: rgb(4, 0, 255);
+    border: 3px solid red;
+    transition: 4s;
+}
+.box4:hover{
+    /*transform: translate(-50%,-50%) rotate(45deg) scale(1.5); PARA QUE ELE GIRE NO MESMO EIXO, O TRANSLATE E O ROTATE TEM QUE ESTAR NA MESMA LINHA DE COMANDO*/
+    transform: translate(-50%,-50%) rotateX(270deg); /* O X, é feito para vertical nesse caso, pois é animação 3D.*/
+   
+}
+.box1 p:hover{
+    transition: 0.5s;
+    opacity: 0.4;
+    background-color: rgba(255, 255, 0);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.box{
+    -webkit-animation-name: animacao_1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: animacao_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacao_1{
+    0%{
+        box-shadow: 5px 5px 5px 1px rgb(51, 51, 51);
+    }
+    50%{
+        box-shadow: 5px 5px 5px 10px rgb(51, 51, 51);
+    }
+    100%{
+        box-shadow: 5px 5px 5px 1px rgb(51, 51, 51);
+    }
+}
