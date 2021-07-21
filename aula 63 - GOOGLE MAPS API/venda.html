@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Guilherme Padovani Silveira">
+    <meta name="keywords" content="Projeto,de,programação,full-stack">
+    <meta name="description" content="Esse é um projeto de programação da Danki Code">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylevendas.css">
+    <title>VENDAS - RM VEICULOS</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <section class="center">
+                <img src="images/logo.jpg" alt="">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="venda.html" style="color: red;">VENDA</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav><!-- DESKTOP-->
+                <nav class="mobile">
+                    <ul>
+                        <li><a href="" style="color: red;">HOME</a></li>
+                        <li><a href="">VENDA</a></li>
+                        <li><a href="">SOBRE</a></li>
+                        <li><a href="">CONTATO</a></li>
+                    </ul>
+                </nav><!-- MOBILE -->
+                <div class="clear"></div>
+            </section><!-- CENTER -->
+        </section><!-- LOGO -->
+    </header>
+    <main>
+        <div class="line-titulo">
+            <div class="ln1"></div> <!-- LINHA PRETA -->
+            <h2>VEICULOS PARA VENDA</h2>
+        </div>
+            <section class="center #center">
+                <section class="filtro">
+                    <div class="formulario">
+                        <form action="">
+                            
+                            <div class="slidecontainer">
+                                <h2>Filtro por preço</h2>
+                                <input type="range" min="1000" max="250000" value="20000" class="slider" id="myRange">
+                                <p>Valor: <span id="demo"></span></p>
+                                <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value;
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                                }
+                                </script>
+                            </div><!--SLIDECONTAINER-->
+                            <div class="filtroyear">
+                                <h2>Filtro por Ano</h2>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1960-1970</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1971-1990</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1991-2000</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">2001-2021</label><br/>
+                            </div><!--FILTRO YEAR-->
+                            
+                        </form>
+                        <div class="clear"></div>
+                </section><!-- FILTRO -->
+
+                <section class="vitrine">
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div>
+                </section><!--VITRINE-->
+                <div class="clear"></div>
+            </section><!--CENTER-->
+    </main>
+    <footer>
+        <section class="center">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="venda.html" style="color: red;">VENDA</a></li>
+                    <li><a href="">GALERIA</a></li>
+                    <li><a href="">EVENTOS</a></li>
+                    <li><a href="">SOBRE NÓS</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="direitos">
+                <p>todos os direitos reservados</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

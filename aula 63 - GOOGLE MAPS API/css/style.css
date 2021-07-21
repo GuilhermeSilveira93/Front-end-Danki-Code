@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
+}
+html,body{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+header .logo{
+    padding: 20px 2% 35px 2%;
+}
+.center nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
+header img{
+    float: left;
+}
+.center nav.desktop > ul{
+    margin-top: 30px;
+    float: right;
+}
+.center nav.desktop > ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 23px;
+	padding:0 20px;
+    font-style: italic;
+}
+nav.mobile{
+    margin-top: 30px;
+    width: 32px;
+    height: 32px;
+    float: right;
+    background-size: 100% 100%;
+    background-image: url(../images/icon_menu.png);
+    display: none;
+}
+nav.mobile ul{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 105px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 15px 15px 2px red;
+}
+nav.mobile li{
+    font-size: 23px;
+	padding: 20px 0;
+    font-style: italic;
+}
+nav.mobile li a{
+    color: black;
+    text-decoration: none;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+
+/* ----------------------------------BACKGROUND-----------------------------------------*/
+.bg > .center{
+    position: relative;
+}
+.bg .car{
+    position: absolute;
+    float: right;
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    /*
+    padding-top: 41%;*/
+}
+.bg .black{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    height: 60vh;
+}
+/* ----------------------------------BACKGROUND-----------------------------------------*/
+
+/* ----------------------------------BANNER-----------------------------------------*/
+.banner{
+    position: absolute;
+    top: 35px;
+    left: 45px;
+}
+.text-banner{
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 23px;
+    padding: 15px 30px;
+    color: white;
+    width: 260px;
+    background-image: url(../images/box-text.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.text-banner:nth-last-child(1){
+    color: black;
+    background-image: url(../images/box-white-text.png);
+    width: 300px;
+}
+/* ----------------------------------BANNER-----------------------------------------*/
+
+/* ----------------------------------VITRINE-----------------------------------------*/
+
+.line-titulo{
+	width: 100%;
+	margin: 50px auto;
+	position: relative;
+	text-align: center;
+}
+.line-titulo2{
+	width: 100%;
+	margin: 0px auto;
+	position: relative;
+	text-align: center;
+}
+.ln1{
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	top:20px;
+	background:black;
+}
+.center .line-titulo h2, .center .line-titulo2 h2{
+	position: relative;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.vitrine{
+    max-width: 1000px;
+    width: 100%;
+    margin: 25px auto;
+}
+.carros{
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 25px;
+}
+.carros img{
+    width: 100%;
+}
+.carros > a{
+    width: 140px;
+    display: block;
+    margin-top: 10px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+/* ----------------------------------VITRINE-----------------------------------------*/
+
+/* ----------------------------------DETALHES-----------------------------------------*/
+.servicos{
+    background-color: #252425 ;
+    width: 45%;
+    position: relative;
+}
+.depoimentos{
+    background-color: #FB3F29;
+    width: 55%;
+}
+.detserv{
+    color: white;
+    padding: 40px 80px 250px 80px;
+    display: inline-block;
+    margin-right: -4px;
+    height: 25vh;
+    vertical-align: top;
+}
+.servicos ul{
+    margin-top: 25px;
+    list-style-position: inside;
+}
+.servicos > p{
+    position: absolute;
+    background-color: red;
+    padding: 10px;
+    width: 85px;
+    right: 25px;
+    bottom: 50px;
+}
+.depoimentos p{
+    margin: 25px;
+}
+.depoimentos span{
+    display: block;
+    text-align: right;
+    color: #252425;
+}
+/* ----------------------------------DETALHES-----------------------------------------*/
+
+/* ----------------------------------CONTATO-----------------------------------------*/
+form{
+    max-width: 600px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+input{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 25px;
+    margin: 15px 0;
+    padding: 10px 25px;
+}
+input:nth-of-type(1){
+    width: 100%;
+}
+input:nth-of-type(2){
+    width: 50%;
+    float: left;
+}
+input:nth-of-type(3){
+    width: 50%;
+    float: left;
+}
+input:nth-of-type(4){
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    float: right;
+    text-align: center;
+    width: 100px;
+}
+textarea{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 25px;
+    padding: 10px 25px;
+    width: 100%;
+    resize: none;
+
+}
+/* ----------------------------------CONTATO-----------------------------------------*/
+
+/* ----------------------------------FOOTER-----------------------------------------*/
+footer .center{
+    margin-top: 100px;
+    background-color: #252425;
+    font-style: italic;
+    color: white;
+    padding: 25px 30px 50px 30px;
+}
+footer nav{
+    float: left;
+}
+footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.direitos{
+    float: right;
+}
+/* ----------------------------------FOOTER-----------------------------------------*/
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/
+
+                     /* ---------------------  995PX  ---------------------*/
+@media screen and (max-width:995px){
+    .bg .car{
+        background-position: bottom;
+    }
+}
+                      /* ---------------------  995PX  ---------------------*/
+
+                      /* ---------------------  800PX  ---------------------*/
+@media screen and (max-width:800px){
+    .servicos{
+        width: 100%;
+    }
+    .depoimentos{
+        width: 100%;
+    }
+    .detserv{
+        color: white;
+        padding: 40px 80px 250px 80px;
+        display: inline-block;
+        margin-right: -4px;
+        height: 25vh;
+        vertical-align: top;
+    }
+    .servicos ul{
+        margin-top: 25px;
+        list-style-position: inside;
+    }
+    .servicos > p{
+        position: absolute;
+        background-color: red;
+        padding: 10px;
+        width: 85px;
+        right: 25px;
+        bottom: 50px;
+    }
+    .depoimentos p{
+        margin: 25px;
+    }
+    .depoimentos span{
+        display: block;
+        text-align: right;
+        color: #252425;
+    }
+} 
+                      /* ---------------------  800PX  ---------------------*/                     
+
+                      /* ---------------------  664PX  ---------------------*/
+@media screen and (max-width:664px){
+    header .logo .center nav.desktop{
+        display: none;
+    }
+    header .logo .center nav.mobile{
+        display: block;
+    }
+    .bg .car{
+        background-size: contain;
+        background-position: bottom;
+    }
+    .vitrine{
+        width: 100%;
+    }
+    .carros{
+        margin: 50px 10%;
+        display: block;
+        width: 80%;
+        border: 0;
+        display: inline-block;
+        padding: 0px;
+    }
+    .carros img{
+        width: 100%;
+    }
+    .carros > a{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    form{
+        padding: 0px 5%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        float: none;
+    }
+    .direitos{
+        float: none;
+    }
+}
+                      /* ---------------------  664PX  ---------------------*/
+
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/

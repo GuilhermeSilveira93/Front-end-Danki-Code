@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
+}
+html,body{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1380px;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+header .logo{
+    padding: 20px 2% 35px 2%;
+}
+.center nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
+header img{
+    float: left;
+}
+.center nav.desktop > ul{
+    margin-top: 30px;
+    float: right;
+}
+.center nav.desktop > ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 23px;
+	padding:0 20px;
+    font-style: italic;
+}
+nav.mobile{
+    margin-top: 30px;
+    width: 32px;
+    height: 32px;
+    float: right;
+    background-size: 100% 100%;
+    background-image: url(../images/icon_menu.png);
+    display: none;
+}
+nav.mobile ul{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 105px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 15px 15px 2px red;
+}
+nav.mobile li{
+    font-size: 23px;
+	padding: 20px 0;
+    font-style: italic;
+}
+nav.mobile li a{
+    color: black;
+    text-decoration: none;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+
+/* ----------------------------------VITRINE-----------------------------------------*/
+
+.line-titulo{
+	width: 100%;
+	margin: 0px auto;
+	position: relative;
+	text-align: center;
+}
+.ln1{
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	top:20px;
+	background:black;
+}
+.vitrine{
+    float: right;
+    max-width: 1000px;
+    width: 80%;
+}
+.line-titulo h2{
+	position: relative;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.carros{
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 25px;
+}
+.carros img{
+    width: 100%;
+}
+.carros > a{
+    width: 140px;
+    display: block;
+    margin-top: 10px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+/* ----------------------------------VITRINE-----------------------------------------*/
+
+/* ----------------------------------FILTRO-----------------------------------------*/
+
+.filtro{
+    margin-bottom: 0px;
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+input[type=checkbox]{
+    display: inline-block;
+}
+/* ----------------------------------FILTRO-----------------------------------------*/
+/* ----------------------------------FOOTER-----------------------------------------*/
+footer .center{
+    margin-top: 100px;
+    background-color: #252425;
+    font-style: italic;
+    color: white;
+    padding: 25px 30px 50px 30px;
+}
+footer nav{
+    float: left;
+}
+footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.direitos{
+    float: right;
+}
+/* ----------------------------------FOOTER-----------------------------------------*/
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/
+
+                     /* ---------------------  995PX  ---------------------*/
+@media screen and (max-width:995px){
+    .bg .car{
+        background-position: bottom;
+    }
+}
+                      /* ---------------------  995PX  ---------------------*/
+
+                      /* ---------------------  800PX  ---------------------*/
+@media screen and (max-width:800px){
+
+} 
+                      /* ---------------------  800PX  ---------------------*/                     
+
+                      /* ---------------------  664PX  ---------------------*/
+@media screen and (max-width:664px){
+    header .logo .center nav.desktop{
+        display: none;
+    }
+    header .logo .center nav.mobile{
+        display: block;
+    }
+    .vitrine{
+        width: 100%;
+    }
+    .carros{
+        margin: 50px 10%;
+        display: block;
+        width: 80%;
+        border: 0;
+        display: inline-block;
+        padding: 0px;
+    }
+    .carros img{
+        width: 100%;
+    }
+    .carros > a{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        float: none;
+    }
+    .direitos{
+        float: none;
+    }
+    .filtro{
+        width: 100%;
+    }
+    .slidecontainer, .filtroyear{
+        width: 50%;
+        display: block;
+        float: left;
+        padding-left: 25px;
+    }
+}
+                      /* ---------------------  664PX  ---------------------*/
+
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/
