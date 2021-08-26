@@ -7,10 +7,11 @@ html,body{
     height: 100%;
 }
 body{
-    background-color: black;
+    background-color: rgb(110, 81, 190);
 }
 .artigo1{
-    width: 100%;
-    padding: 30px;
     background-color: rgb(121, 121, 121);
 }
+.artigo2{
+    background-color: rgb(100 , 100, 100);
+} 
