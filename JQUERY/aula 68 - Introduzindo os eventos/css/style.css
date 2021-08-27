@@ -11,7 +11,10 @@ body{
 }
 .artigo1{
     background-color: rgb(121, 121, 121);
+    padding: 50px;
+    cursor: pointer;
 }
 .artigo2{
     background-color: rgb(100 , 100, 100);
-} 
+    padding: 50px;
+}
