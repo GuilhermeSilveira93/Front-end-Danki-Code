@@ -8,8 +8,10 @@ html,body{
 }
 .box{
     width: 500px;
-    margin: 0 auto;
+    margin: 50px;
     font-size: 25pt;
     padding: 20px;
     background-color: gray;
+    border: 5px solid rgb(48, 48, 48);
+    border-radius: 15px;
 }
