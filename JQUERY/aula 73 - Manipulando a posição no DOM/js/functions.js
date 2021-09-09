@@ -27,4 +27,5 @@ $(window).on('load', function(){
    var aff = '<h1>dividindo as divs</h1>'
    $('.box').after(aff)
    $('.box').before(aff + '<h2>Antes</h2') 
+   $('.box').eq(1).remove()
 }) 
