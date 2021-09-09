@@ -10,4 +10,21 @@ $(window).on('load', function(){
 
    $('#questionario').append('A cor do céu é: ' + resposta)
    })
+
+   var texto = $('<p>Aqui temos um texto Dinamico</p>').appendTo($('.box').eq(1))
+
+   texto.css('color','red')
+   texto.css('box-shadow','red')
+
+   /* DAQUI PARA CIMA, SEMPRE ADICIONAMOS O ELEMENTO AO FINAL DA DIV BOX */
+
+   /* DAQUI PARA CIMA, SEMPRE ADICIONAMOS O ELEMENTO AO FINAL DA DIV BOX */
+   $('.box').eq(0).prepend('<h1>Aqui é meu Prepend</h1>')
+
+   var prependi = $('<h2>Aqui é meu Prependi</h2>').prependTo('.box').eq(1)
+   prependi.css('color','blue')
+
+   var aff = '<h1>dividindo as divs</h1>'
+   $('.box').after(aff)
+   $('.box').before(aff + '<h2>Antes</h2') 
 }) 
