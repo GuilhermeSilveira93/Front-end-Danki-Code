@@ -3,6 +3,7 @@ $(window).on('load', function(){
    
 
    //---------------------------//
+   /* 1ª parte da aula
    $('a').click(function(){
       
 
@@ -17,6 +18,19 @@ $(window).on('load', function(){
       },3000)
       
 
+   1ª parte da aula */
+
+   /* 2ª PARTE
+      var func = function(){
+         $(this).css('background','green')
+      }
+      $('input').keyup(func);
+   2ª PARTE */
    
+   var func = function(){
+      $(this).css('background','green')
+   }
+   $('input').keyup(func);
+
    return false;
 }) 
