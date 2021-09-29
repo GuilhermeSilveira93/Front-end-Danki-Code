@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+.box1, .box2{
+    text-align: center;
+    background-color: rgb(146, 146, 146);
+    width: 100%;
+    padding: 40px 3%;
+    color: rgb(255, 255, 255);
+    transition: 3s;
+}
+.minhaclasse{
+    color: blue;
+}
